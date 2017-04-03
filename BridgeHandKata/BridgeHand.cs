@@ -33,7 +33,7 @@ namespace BridgeHandKata
 
             OpeningBidStrategy openingBid = new OpeningBidStrategy(points, suit);
 
-            return openingBid.GetSuggestedBid();
+            return openingBid.SuggestedBid();
         }
 
         public Suit GetBestSuit()

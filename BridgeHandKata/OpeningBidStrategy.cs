@@ -16,7 +16,7 @@
             this._suit = suit;
         }
 
-        public string GetSuggestedBid()
+        public string SuggestedBid()
         {
             if (NotEnoughPointsToBid())
             {
