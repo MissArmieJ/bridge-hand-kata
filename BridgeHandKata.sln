@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BridgeHandKata", "BridgeHandKata\BridgeHandKata.csproj", "{08347975-3DB5-40AE-BC1E-5AA8A6B19977}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BridgeHandKata.Test", "BridgeHandKata.Test\BridgeHandKata.Test.csproj", "{0639A93E-6D10-4EA3-ACF1-39CC4D625CF2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{08347975-3DB5-40AE-BC1E-5AA8A6B19977}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08347975-3DB5-40AE-BC1E-5AA8A6B19977}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08347975-3DB5-40AE-BC1E-5AA8A6B19977}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08347975-3DB5-40AE-BC1E-5AA8A6B19977}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0639A93E-6D10-4EA3-ACF1-39CC4D625CF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0639A93E-6D10-4EA3-ACF1-39CC4D625CF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0639A93E-6D10-4EA3-ACF1-39CC4D625CF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0639A93E-6D10-4EA3-ACF1-39CC4D625CF2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
