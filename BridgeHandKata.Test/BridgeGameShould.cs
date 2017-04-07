@@ -3,7 +3,7 @@
 namespace BridgeHandKata.Test
 {
     [TestFixture]
-    public class BridgeGameTest
+    public class BridgeGameShould
     {
         const string PlayersHandsN12S8E1W20 =
             "N(S:AJ??, H:K??, D:QJ, C:J???); " +
@@ -13,7 +13,7 @@ namespace BridgeHandKata.Test
 
         [TestCase("N(S:J???, H:???, D:??, C:????);", 1)]
         [TestCase("N(S:J???, H:J??, D:??, C:????);", 2)]
-        public void TestAGameForPlayerNorthsPoints(string playersHand, int expectedPoints)
+        public void get_points_for_player_north(string playersHand, int expectedPoints)
         {
             BridgeGame game = new BridgeGame(playersHand);
 
@@ -24,7 +24,7 @@ namespace BridgeHandKata.Test
 
         [TestCase("N(S:J???, H:???, D:??, C:????); S(S:QJ??, H:???, D:??, C:????);", 1, 3)]
         [TestCase("N(S:J???, H:J??, D:J?, C:????); S(S:QJ??, H:???, D:??, C:J???);", 3, 4)]
-        public void TestAGameForPlayersNorthsAndSouthsPoints(string playersHand, int northsExpectedPoints, int southsExpectedPoints)
+        public void get_points_for_players_north_and_south(string playersHand, int northsExpectedPoints, int southsExpectedPoints)
         {
             BridgeGame game = new BridgeGame(playersHand);
 
@@ -36,7 +36,7 @@ namespace BridgeHandKata.Test
         }
 
         [Test]
-        public void TestAGameForAll4PlayersPoints()
+        public void get_points_for_all_players()
         {
             BridgeGame game = new BridgeGame(PlayersHandsN12S8E1W20);
 

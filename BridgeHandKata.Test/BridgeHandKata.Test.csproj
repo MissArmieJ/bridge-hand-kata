@@ -54,8 +54,8 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="BridgeGameTest.cs" />
-    <Compile Include="BridgeHandTests.cs" />
+    <Compile Include="BridgeGameShould.cs" />
+    <Compile Include="BridgeHandShould.cs" />
     <Compile Include="OpeningBidStrategyShould.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

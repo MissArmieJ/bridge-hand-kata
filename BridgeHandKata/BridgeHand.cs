@@ -11,12 +11,12 @@ namespace BridgeHandKata
             _hand = hand;
         }
 
-        public int GetPoints()
+        public int CalculatePoints()
         {
             return SumCards(_hand);
         }
 
-        public int GetPointsBy(Suit suit)
+        public int CalculatePointsBy(Suit suit)
         {
             return SumCards(suit.GetHand(_hand));
         }
@@ -28,19 +28,19 @@ namespace BridgeHandKata
 
         public string SuggestedOpeningBid()
         {
-            var points = GetPoints();
-            var suit = GetBestSuit();
+            var points = CalculatePoints();
+            var suit = CalculateStrongestLongestSuit();
 
             OpeningBidStrategy openingBid = new OpeningBidStrategy(points, suit);
 
             return openingBid.SuggestedBid();
         }
 
-        public Suit GetBestSuit()
+        public Suit CalculateStrongestLongestSuit()
         {
             //(1) strongest = most points 
-            var mostPoints = DeckOfCards.Suits().Max(GetPointsBy);
-            var suitsMostsPoints = DeckOfCards.Suits().Where(c => GetPointsBy(c) == mostPoints).ToList();
+            var mostPoints = DeckOfCards.Suits().Max(CalculatePointsBy);
+            var suitsMostsPoints = DeckOfCards.Suits().Where(c => CalculatePointsBy(c) == mostPoints).ToList();
 
             //(2) longest  = most cards
             var mostCards = suitsMostsPoints.Max(HowManyCardsIn);

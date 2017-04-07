@@ -30,7 +30,7 @@ namespace BridgeHandKata
 
         public int GetPointsFor(Player player)
         {
-            return _playersBridgeHands[player].GetPoints();
+            return _playersBridgeHands[player].CalculatePoints();
         }
 
         
